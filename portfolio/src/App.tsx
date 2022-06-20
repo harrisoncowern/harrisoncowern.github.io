@@ -1,10 +1,10 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import Album from './Album';
 
 function App() {
   return (
     <React.Fragment>
-      <Typography variant='h1'>Harrison Cowern Portfolio</Typography>
+      <Album/>
     </React.Fragment>
   );
 }
