@@ -1,21 +1,44 @@
 import * as React from 'react';
-import { AppBar, Box, Menu, MenuItem, Toolbar } from '@mui/material';
+import { AppBar, Box, Toolbar, Typography } from '@mui/material';
 
 import { style } from '../siteStyles';
+import { Facebook, Instagram, Twitter, YouTube } from '@mui/icons-material';
 
 export function Header() {
-	const [optionsMenuAnchor, setOptionsMenuAnchor] = React.useState<null | HTMLElement>(null);
-
-
 
 	return (
 		<Box mb={3}>
 			<AppBar position="static" color="secondary" style={style.headerClass}>
 				<Toolbar>
-					<Box width={1} display="flex" justifyContent="flex-end" alignItems="center">
-						<Menu anchorEl={optionsMenuAnchor} open={Boolean(optionsMenuAnchor)} onClose={() => setOptionsMenuAnchor(null)}>
-							<MenuItem onClick={() => console.log('home')}>Home</MenuItem>
-						</Menu>
+					<a href="/">
+						<div
+							style={{
+								display: 'block',
+								verticalAlign: 'middle',
+								height: 0,
+								width: 160,
+								marginTop: '-0.25rem',
+								padding: '28.5714% 0 0',
+								background: `url(${style.headerLogo}) no-repeat center center/contain`,
+							}}
+						/>
+					</a>
+					<Box width={1} display="flex" alignItems="center" pl={2}>
+						<Box flexGrow={1}>
+							<Typography variant="h4">Harrison Cowern Portfolio</Typography>
+						</Box>
+						<Box px={0.5}>
+							<Facebook/>
+						</Box>
+						<Box px={0.5}>
+							<Twitter />
+							</Box>
+						<Box px={0.5}>
+							<YouTube />
+							</Box>
+						<Box px={0.5}>
+							<Instagram />
+					</Box>
 					</Box>
 				</Toolbar>
 			</AppBar>
