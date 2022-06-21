@@ -25,7 +25,7 @@ export function Header() {
                     </a>
                     <Box width={1} display="flex" alignItems="center" pl={2}>
                         <Box flexGrow={1}>
-                            <Typography variant="h4" color="secondary">
+                            <Typography variant="h4" color={style.headerClass.color}>
                                 Harrison Cowern Portfolio
                             </Typography>
                         </Box>

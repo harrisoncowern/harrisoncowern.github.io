@@ -27,7 +27,7 @@ class SiteStyle implements ISiteStyle {
                 },
                 background: {
                     default: this.PORTFOLIO_CREAM,
-                    paper: this.PORTFOLIO_COLOUR_5,
+                    paper: this.PORTFOLIO_WHITE,
                 },
             },
             typography: {
