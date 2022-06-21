@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
-import { useTheme } from '@mui/material';
+import { Box, useTheme } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
 import { CVItem } from './CVItem';
@@ -10,9 +10,11 @@ export function CV() {
 
     return (
         <>
-            <Typography variant="h4" align="center" sx={{ textTransform: 'uppercase' }}>
-                Curriculum Vitae
-            </Typography>
+            <Box pb={1}>
+                <Typography variant="h2" align="center" sx={{ textTransform: 'uppercase' }}>
+                    Curriculum Vitae
+                </Typography>
+            </Box>
             <Timeline position="alternate">
                 <CVItem
                     year="2022"

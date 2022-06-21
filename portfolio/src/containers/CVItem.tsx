@@ -22,10 +22,10 @@ export function CVItem(props: IProps) {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-                <Typography variant="h2">{props.year}</Typography>
+                <Typography variant="h3">{props.year}</Typography>
                 <Box>
                     <Typography
-                        variant="h5"
+                        variant="h4"
                         sx={{
                             padding: 0,
                             textTransform: 'uppercase',
