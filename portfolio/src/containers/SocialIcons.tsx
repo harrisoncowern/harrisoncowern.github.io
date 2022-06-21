@@ -7,7 +7,7 @@ import { style } from '../siteStyles';
 export function SocialIcons() {
     return (
         <Box display="flex" alignItems="center">
-            <Box px={0.5}>
+            <Box pr={0.5}>
                 <IconButton style={style.headerClass} aria-label="Youtube.com" onClick={() => window.open('https://www.youtube.com/channel/UCeJuEe3MpzaF1XcLoMBzQdg/null')}>
                     <YouTube />
                 </IconButton>
@@ -22,7 +22,7 @@ export function SocialIcons() {
                     <Twitter />
                 </IconButton>
             </Box>
-            <Box px={0.5}>
+            <Box pl={0.5}>
                 <IconButton style={style.headerClass} aria-label="Instagram.com" onClick={() => window.open('https://www.instagram.com/')}>
                     <Instagram />
                 </IconButton>

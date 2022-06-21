@@ -11,7 +11,7 @@ interface IProps {
 
 export function ProjectItem(props: IProps) {
     const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down('xs'));
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
     const hasImage = (props.image ?? '') != '';
     const hasVideo = (props.video ?? '') != '';
