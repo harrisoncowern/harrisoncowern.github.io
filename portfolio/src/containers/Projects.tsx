@@ -7,7 +7,7 @@ export function Projects() {
     return (
         <>
             <Box pb={1}>
-                <Typography variant="h2" align="center" sx={{ textTransform: 'uppercase' }}>
+                <Typography variant="h3" align="center" sx={{ textTransform: 'uppercase' }}>
                     Projects
                 </Typography>
             </Box>

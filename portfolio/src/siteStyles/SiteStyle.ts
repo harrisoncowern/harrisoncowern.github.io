@@ -6,42 +6,44 @@ import headerLogo from '../img/logo.png';
 import { ISiteStyle } from '.';
 
 class SiteStyle implements ISiteStyle {
-    public readonly PORTFOLIO_BLUE_LIGHT = '#B8D8D8';
-    public readonly PORTFOLIO_BLUE_MEDIUM = '#7A9E9F';
-    public readonly PORTFOLIO_BLUE_DARK = '#4F6367';
-    public readonly PORTFOLIO_MAIN = '#EEF5DB';
-    public readonly PORTFOLIO_SECONDARY = '#FE5F55';
+    public readonly PORTFOLIO_COLOUR_1 = '#E27D60';
+    public readonly PORTFOLIO_COLOUR_2 = '#41B3A3';
+    public readonly PORTFOLIO_COLOUR_3 = '#E8A87C';
+    public readonly PORTFOLIO_COLOUR_4 = '#C38D9E';
+    public readonly PORTFOLIO_COLOUR_5 = '#85DCBA';
+    public readonly PORTFOLIO_CREAM = '#f2f3f4';
+    public readonly PORTFOLIO_WHITE = '#FFFFFF';
 
     public createMuiTheme() {
         let theme = createTheme({
             palette: {
                 primary: {
-                    main: this.PORTFOLIO_SECONDARY,
-                    contrastText: this.PORTFOLIO_BLUE_LIGHT,
+                    main: this.PORTFOLIO_COLOUR_1,
+                    contrastText: this.PORTFOLIO_CREAM,
                 },
                 secondary: {
-                    main: this.PORTFOLIO_MAIN,
-                    contrastText: this.PORTFOLIO_BLUE_LIGHT,
+                    main: this.PORTFOLIO_COLOUR_2,
+                    contrastText: this.PORTFOLIO_CREAM,
                 },
                 background: {
-                    default: '#f2f3f4',
-                    paper: '#FFFFFF',
+                    default: this.PORTFOLIO_CREAM,
+                    paper: this.PORTFOLIO_COLOUR_5,
                 },
             },
             typography: {
                 fontFamily: ['Gilroy-Medium', 'sans-serif'].join(','),
                 h2: {
-                    color: this.PORTFOLIO_BLUE_DARK,
+                    color: this.PORTFOLIO_COLOUR_3,
                 },
                 h3: {
-                    color: this.PORTFOLIO_BLUE_DARK,
+                    color: this.PORTFOLIO_COLOUR_3,
                     fontWeight: 300,
                 },
                 h4: {
                     textTransform: 'uppercase',
                     fontWeight: 700,
                     fontFamily: 'Gilroy-bold',
-                    color: this.PORTFOLIO_BLUE_LIGHT,
+                    color: this.PORTFOLIO_COLOUR_1,
                     fontSize: '16px',
                     lineHeight: '24px',
                 },
@@ -53,7 +55,7 @@ class SiteStyle implements ISiteStyle {
                 MuiFilledInput: {
                     styleOverrides: {
                         root: {
-                            backgroundColor: 'rgba(0, 0, 0, 0.07)',
+                            backgroundColor: this.PORTFOLIO_COLOUR_5,
                         },
                     },
                 },
@@ -61,7 +63,7 @@ class SiteStyle implements ISiteStyle {
                     styleOverrides: {
                         root: {
                             '&.Mui-focused': {
-                                color: this.PORTFOLIO_BLUE_MEDIUM,
+                                color: this.PORTFOLIO_COLOUR_2,
                             },
                         },
                     },
@@ -69,7 +71,7 @@ class SiteStyle implements ISiteStyle {
                 MuiListItemText: {
                     styleOverrides: {
                         primary: {
-                            color: this.PORTFOLIO_BLUE_MEDIUM,
+                            color: this.PORTFOLIO_COLOUR_2,
                         },
                         secondary: {
                             textDecoration: 'none !important',
@@ -79,7 +81,7 @@ class SiteStyle implements ISiteStyle {
                 MuiLink: {
                     styleOverrides: {
                         root: {
-                            color: this.PORTFOLIO_BLUE_MEDIUM,
+                            color: this.PORTFOLIO_COLOUR_2,
                         },
                     },
                 },
@@ -87,7 +89,7 @@ class SiteStyle implements ISiteStyle {
                     styleOverrides: {
                         textColorPrimary: {
                             '&.Mui-selected': {
-                                color: this.PORTFOLIO_BLUE_LIGHT,
+                                color: this.PORTFOLIO_COLOUR_1,
                             },
                         },
                     },
@@ -107,11 +109,11 @@ class SiteStyle implements ISiteStyle {
         headHtml += '<link rel="icon" type="image/png" sizes="32x32" href="/img/default/favicon-32x32.png">';
         headHtml += '<link rel="icon" type="image/png" sizes="16x16" href="/img/default/favicon-16x16.png">';
         headHtml += '<link rel="manifest" href="/img/default/site.webmanifest">';
-        headHtml += `<link rel="mask-icon" href="/img/default/safari-pinned-tab.svg" color="${this.PORTFOLIO_BLUE_LIGHT}">`;
+        headHtml += `<link rel="mask-icon" href="/img/default/safari-pinned-tab.svg" color="${this.PORTFOLIO_COLOUR_1}">`;
         headHtml += '<link rel="shortcut icon" href="/img/default/favicon.ico">';
-        headHtml += `<meta name="msapplication-TileColor" content="${this.PORTFOLIO_BLUE_LIGHT}">`;
+        headHtml += `<meta name="msapplication-TileColor" content="${this.PORTFOLIO_COLOUR_1}">`;
         headHtml += '<meta name="msapplication-config" content="/img/default/browserconfig.xml">';
-        headHtml += `<meta name="theme-color" content="${this.PORTFOLIO_BLUE_LIGHT}">`;
+        headHtml += `<meta name="theme-color" content="${this.PORTFOLIO_COLOUR_1}">`;
 
         document.getElementsByTagName('head')[0].innerHTML = headHtml;
 
@@ -124,8 +126,8 @@ class SiteStyle implements ISiteStyle {
 
     public get headerClass(): CSSProperties {
         return {
-            backgroundColor: this.PORTFOLIO_BLUE_MEDIUM,
-            color: '#fff',
+            backgroundColor: this.PORTFOLIO_COLOUR_3,
+            color: this.PORTFOLIO_CREAM,
         };
     }
 
@@ -135,8 +137,8 @@ class SiteStyle implements ISiteStyle {
 
     public get footerClass(): CSSProperties {
         return {
-            backgroundColor: this.PORTFOLIO_BLUE_DARK,
-            color: '#fff',
+            backgroundColor: this.PORTFOLIO_COLOUR_3,
+            color: this.PORTFOLIO_CREAM,
         };
     }
 }

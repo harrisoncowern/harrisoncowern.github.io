@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { Facebook, Instagram, Twitter, YouTube } from '@mui/icons-material';
 import { AppBar, Box, Toolbar, Typography } from '@mui/material';
 
 import { style } from '../siteStyles';
+
+import { SocialIcons } from './SocialIcons';
 
 export function Header() {
     return (
@@ -24,20 +25,11 @@ export function Header() {
                     </a>
                     <Box width={1} display="flex" alignItems="center" pl={2}>
                         <Box flexGrow={1}>
-                            <Typography variant="h4">Harrison Cowern Portfolio</Typography>
+                            <Typography variant="h4" color="secondary">
+                                Harrison Cowern Portfolio
+                            </Typography>
                         </Box>
-                        <Box px={0.5}>
-                            <Facebook />
-                        </Box>
-                        <Box px={0.5}>
-                            <Twitter />
-                        </Box>
-                        <Box px={0.5}>
-                            <YouTube />
-                        </Box>
-                        <Box px={0.5}>
-                            <Instagram />
-                        </Box>
+                        <SocialIcons />
                     </Box>
                 </Toolbar>
             </AppBar>
