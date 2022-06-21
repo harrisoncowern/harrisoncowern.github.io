@@ -1,26 +1,47 @@
 {
   "compilerOptions": {
+    "sourceMap": true,
+    "module": "esnext",
     "target": "es5",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "lib": [
-      "dom",
-      "dom.iterable",
+      "DOM",
+      "DOM.Iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "types": [
+      "jest",
+      "node",
+      "@testing-library/jest-dom"
+    ]
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/*.test.ts",
+    "src/*.test.tsx",
+    "src/*.test-d.ts",
+    "src/*.test-d.tsx",
+    "src/__mocks__",
+    "src/__tests__"
   ]
 }

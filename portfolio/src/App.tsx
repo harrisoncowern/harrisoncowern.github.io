@@ -1,12 +1,19 @@
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import React from 'react';
-import Album from './Album';
+import { Home, Layout } from './containers';
+import { style } from './siteStyles/SiteStyle';
 
-function App() {
+// setup site styles
+style.setDocumentHeaders();
+const theme = style.createMuiTheme();
+
+export function App() {
   return (
-    <React.Fragment>
-      <Album/>
-    </React.Fragment>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Layout>
+        <Home/>
+      </Layout>
+    </ThemeProvider>
   );
 }
-
-export default App;
