@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.7124dcce.js",
+    "main.js": "/static/js/main.bc9f5614.js",
+    "static/media/EarlEBird.jpg": "/static/media/EarlEBird.c8d76d732fb4da476630.jpg",
     "index.html": "/index.html",
-    "main.7124dcce.js.map": "/static/js/main.7124dcce.js.map"
+    "main.bc9f5614.js.map": "/static/js/main.bc9f5614.js.map"
   },
   "entrypoints": [
-    "static/js/main.7124dcce.js"
+    "static/js/main.bc9f5614.js"
   ]
 }
