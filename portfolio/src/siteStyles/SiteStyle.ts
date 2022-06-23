@@ -6,11 +6,11 @@ import headerLogo from '../img/logo.png';
 import { ISiteStyle } from '.';
 
 class SiteStyle implements ISiteStyle {
-    public readonly PORTFOLIO_COLOUR_1 = '#E27D60';
-    public readonly PORTFOLIO_COLOUR_2 = '#41B3A3';
-    public readonly PORTFOLIO_COLOUR_3 = '#E8A87C';
-    public readonly PORTFOLIO_COLOUR_4 = '#C38D9E';
-    public readonly PORTFOLIO_COLOUR_5 = '#85DCBA';
+    public readonly PORTFOLIO_COLOUR_1 = '#88BDBC';
+    public readonly PORTFOLIO_COLOUR_2 = '#254E58';
+    public readonly PORTFOLIO_COLOUR_3 = '#112D32';
+    public readonly PORTFOLIO_COLOUR_4 = '#4F4A41';
+    public readonly PORTFOLIO_COLOUR_5 = '#6E6658';
     public readonly PORTFOLIO_CREAM = '#f2f3f4';
     public readonly PORTFOLIO_WHITE = '#FFFFFF';
 
@@ -27,13 +27,13 @@ class SiteStyle implements ISiteStyle {
                 },
                 background: {
                     default: this.PORTFOLIO_CREAM,
-                    paper: this.PORTFOLIO_WHITE,
+                    paper: this.PORTFOLIO_CREAM,
                 },
             },
             typography: {
                 fontFamily: ['Gilroy-Medium', 'sans-serif'].join(','),
                 h2: {
-                    color: this.PORTFOLIO_COLOUR_3,
+                    color: this.PORTFOLIO_COLOUR_1,
                 },
                 h3: {
                     color: this.PORTFOLIO_COLOUR_3,
@@ -49,6 +49,10 @@ class SiteStyle implements ISiteStyle {
                 },
                 h6: {
                     fontWeight: 'normal',
+                },
+                subtitle1: {
+                    color: this.PORTFOLIO_COLOUR_4,
+                    fontWeight: 500,
                 },
             },
             components: {
