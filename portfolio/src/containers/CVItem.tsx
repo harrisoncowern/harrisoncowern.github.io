@@ -6,10 +6,9 @@ interface IProps {
     year: string;
     title: string;
     subtitle: string;
-    body: string;
 }
 
-export function CVItem(props: IProps) {
+export function CVItem(props: React.PropsWithChildren<IProps>) {
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -35,7 +34,7 @@ export function CVItem(props: IProps) {
                     <Typography variant="subtitle1">
                         <strong>{props.subtitle}</strong>
                     </Typography>
-                    <Typography variant="body1">{props.body}</Typography>
+                    {props.children}
                 </Box>
             </TimelineContent>
         </TimelineItem>
