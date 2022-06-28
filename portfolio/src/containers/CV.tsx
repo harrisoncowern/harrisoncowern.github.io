@@ -19,7 +19,7 @@ export function CV() {
                 <CVItem year="2018 - 2022" title="2.1 Film and TV Production" subtitle="Wolverhampton University">
                     <Typography variant="body1">Degree focusing on all aspects of the Film and TV production industry, including Story Board Design, Filming, Acting and Editing. I was responsible for both solo projects and working within a team to create various media projects.</Typography>
                     <Typography variant="body1">I have a good knowledge of Adobe Creative Cloud editing software having used this extensively.</Typography>
-                    <Typography variant="body1">For my final year project I created a short mockumentary titled &quot;The Escapades of Earl. E. Bird&quot;. This was very well received and gained one of the highest grades of the year. This was very well received and gained one of the highest grades of the year. This short film follows the titular charactor Earl. E. Bird as he attempts to solve an outstanding crime investigation.</Typography>
+                    <Typography variant="body1">For my final year project I created a short mockumentary titled &quot;The Escapades of Earl. E. Bird&quot;. This was very well received and gained one of the highest grades of the year. This was very well received and gained one of the highest grades of the year. This short film follows the titular charactor Earl. E. Bird as he attempts to solve an outstanding case.</Typography>
                     <Typography variant="body1">This degree has given me exposure to the media industry as well as given me valuable skills that can be applied in other sectors.</Typography>
                 </CVItem>
                 <CVItem year="2016 - 2018" title="A Level" subtitle="Stourbridge College">
